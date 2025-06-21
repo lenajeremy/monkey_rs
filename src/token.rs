@@ -23,6 +23,14 @@ pub enum TokenType {
 
     Assign,
     Plus,
+    Bang,
+    Minus,
+    Slash,
+    Asterisk,
+    LessThan,
+    GreaterThan,
+    Equals,
+    NotEquals,
 
     Comma,
     Semicolon,
@@ -33,6 +41,11 @@ pub enum TokenType {
 
     Function,
     Let,
+    If,
+    Else,
+    Return,
+    False,
+    True,
 }
 
 impl TokenType {
@@ -52,6 +65,19 @@ impl TokenType {
             Self::Semicolon => "SEMICOLON",
             Self::Comma => "COMMA",
             Self::Let => "LET",
+            Self::Bang => "BANG",
+            Self::Minus => "MINUS",
+            Self::Slash => "SLASH",
+            Self::Asterisk => "ASTERISK",
+            Self::LessThan => "LESS_THAN",
+            Self::GreaterThan => "GREATER_THAN",
+            Self::If => "IF",
+            Self::Else => "ELSE",
+            Self::Return => "RETURN",
+            Self::True => "TRUE",
+            Self::False => "FALSE",
+            Self::Equals => "EQUALS",
+            Self::NotEquals => "NOT_EQUALS",
         }
     }
 }
